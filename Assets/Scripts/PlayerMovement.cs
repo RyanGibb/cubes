@@ -16,6 +16,13 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Update() {
 		horizontal = Input.GetAxisRaw("Horizontal");
+		foreach (Touch touch in Input.touches) {
+			if (touch.position.x * 2 < Screen.width) {
+				horizontal = -1;
+			} else {
+				horizontal = 1;
+			}
+		}
 	}
 
 	void FixedUpdate() {
