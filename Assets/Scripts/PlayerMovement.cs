@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour {
 	public Spawner spawner;
 
 	public float zReRootPos = 1000;
-	public float zDeletePos = -10;
+	public float zDeletePos = -1000;
 
 	public float reRootDistance;
 	
@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour {
 				Vector3 childPosition = child.position;
 				childPosition.z -= zReRootPos;
 				// If spawned objects are behind the player, delete them 
-				if (childPosition.z + child.lossyScale.z / 2 < zDeletePos) {
+				if (childPosition.z < zDeletePos) {
 					Destroy(child.gameObject);
 				}
 				child.position = childPosition;
