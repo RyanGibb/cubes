@@ -50,6 +50,7 @@ public class Spawner : MonoBehaviour {
             while (segmentIndex == lastSegmentIndex) {
                 segmentIndex = Random.Range(0, segments.Count);
             }
+            lastSegmentIndex = segmentIndex;
             Action segmentAction = segments[segmentIndex];
             segmentAction.Invoke();
         }
