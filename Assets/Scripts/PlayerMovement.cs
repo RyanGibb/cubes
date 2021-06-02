@@ -11,15 +11,20 @@ public class PlayerMovement : MonoBehaviour {
 	public float zDeletePos = -1000;
 
 	public float reRootDistance;
-	
+
+	public float swipeDistance = 0.25f;
+
 	private float horizontal;
+	private Vector3 firstTouchPos;
 
 	void Update() {
-		horizontal = Input.GetAxisRaw("Horizontal");
-		foreach (Touch touch in Input.touches) {
-			if (touch.position.x * 2 < Screen.width) {
+		horizontal = Input.GetAxis("Horizontal");
+		if (Input.touchCount == 1) {
+			Touch touch = Input.GetTouch(0);
+			horizontal = (touch.position.x * 2 - Screen.width) / 2 / (swipeDistance * Screen.width);
+			if (horizontal < -1) {
 				horizontal = -1;
-			} else {
+			} else if (horizontal > 1) {
 				horizontal = 1;
 			}
 		}
