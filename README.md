@@ -15,6 +15,6 @@ However, it may prove challenging to get to a distance where floating point erro
 
 The world is generated using a Markov Chain containing transitions from segments to segments. Segments may be prefabricated or programatically generated.
 
-![cubes.gif](MarkovChain/cubes_markov_chain.pdf)
+![cubes_markov_chain.svg](MarkovChain/cubes_markov_chain.svg)
 
 The square boxes denote a segment with 0 length. These are to simplify the building of the Markov Chain. They are the same as an epsilon transition in a state machine.
