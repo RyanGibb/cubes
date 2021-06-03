@@ -313,7 +313,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &427348185
 Rigidbody:
@@ -470,7 +470,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1349462252248644048, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1349462252248644048, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -556,6 +556,10 @@ PrefabInstance:
       propertyPath: boxWall
       value: 
       objectReference: {fileID: 7920132574735074810, guid: 006f3221404d2a84695542517e9e5b30, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: cubeBox
+      value: 
+      objectReference: {fileID: 6157599207325783418, guid: c38e3d0553fc9d248900be942a08ddbf, type: 3}
     - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
       propertyPath: obelisk
       value: 
@@ -1044,7 +1048,7 @@ Transform:
   m_LocalScale: {x: 15, y: 1, z: 5000}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1980843306
 GameObject:
