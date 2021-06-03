@@ -1,0 +1,36 @@
+digraph CubesMarkovChain {
+	layout=dot
+	
+	rankdir="LR"
+	concentrate=true
+	fontsize=14
+
+	node [shape=ellipse]
+	{ node [shape=box] Start, BoxSegment }
+	
+	Start -> Staggered, StaggeredReverse
+	Staggered -> Start, StaggeredReverse
+	StaggeredReverse -> Start, Staggered
+
+	StaggeredWide -> Start, StaggeredWideReverse
+	StaggeredWideReverse -> Start, StaggeredWide
+
+	Start -> Funnel
+	Funnel -> Staggered, StaggeredReverse, StaggeredWide, StaggeredWideReverse
+
+	Start -> Choose
+	Choose-> Staggered, StaggeredReverse, StaggeredWide, StaggeredWideReverse
+	Start -> LeftWall, RightWall
+	LeftWall, RightWall -> Staggered, StaggeredReverse, StaggeredWide, StaggeredWideReverse
+
+	Start -> BoxSegment
+	BoxSegment -> BoxWall, CubeBox, WideBox, StaggeredBoxes, StaggeredBoxesReverse
+	BoxWall, CubeBox, WideBox, StaggeredBoxes, StaggeredBoxesReverse -> Obeslisk
+	Obeslisk -> Start
+
+	Start -> Forest, Cubes, Guantlet
+	Forest, Cubes, Guantlet -> Start
+
+	// Choice, Obeslisk -> LeftPoints, RightPoints
+	// LeftPoints, RightPoints -> Start
+}
