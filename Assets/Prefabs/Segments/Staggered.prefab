@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2415393247177111437}
   m_Layer: 0
-  m_Name: StaggeredSmall
+  m_Name: Staggered
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -521,6 +521,58 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1027209057910646990, guid: d6cb63f5206b64d489d5a24515cd072a, type: 3}
     - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: Choose
+      value: 
+      objectReference: {fileID: 2006426062094681791, guid: 8e1e55cc0a5575846b92aca3006e07f5, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: Funnel
+      value: 
+      objectReference: {fileID: 2489644900080536255, guid: 5db910f5dfa941f46a78272484c567c4, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: choose
+      value: 
+      objectReference: {fileID: 2006426062094681791, guid: 8e1e55cc0a5575846b92aca3006e07f5, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: funnel
+      value: 
+      objectReference: {fileID: 2489644900080536255, guid: 5db910f5dfa941f46a78272484c567c4, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: BoxWall
+      value: 
+      objectReference: {fileID: 7920132574735074810, guid: 006f3221404d2a84695542517e9e5b30, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: Obelisk
+      value: 
+      objectReference: {fileID: 6058382946664019617, guid: 0ef1bffa9c9993345981590051f1cd3b, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: TallBox
+      value: 
+      objectReference: {fileID: 6157599207325783418, guid: c38e3d0553fc9d248900be942a08ddbf, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: WideBox
+      value: 
+      objectReference: {fileID: 6157599207325783418, guid: 2066cfa3d3a6c4f45b227f8b778d6a08, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: boxWall
+      value: 
+      objectReference: {fileID: 7920132574735074810, guid: 006f3221404d2a84695542517e9e5b30, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: obelisk
+      value: 
+      objectReference: {fileID: 6058382946664019617, guid: 0ef1bffa9c9993345981590051f1cd3b, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: tallBox
+      value: 
+      objectReference: {fileID: 6157599207325783418, guid: c38e3d0553fc9d248900be942a08ddbf, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: wideBox
+      value: 
+      objectReference: {fileID: 6157599207325783418, guid: 2066cfa3d3a6c4f45b227f8b778d6a08, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: LeftWall
+      value: 
+      objectReference: {fileID: 2006426062094681791, guid: 6dd30c2b8d3f2ac439c3d5319c7ccc19, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
       propertyPath: colour.b
       value: 0.98451805
       objectReference: {fileID: 0}
@@ -532,6 +584,10 @@ PrefabInstance:
       propertyPath: colour.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: leftWall
+      value: 
+      objectReference: {fileID: 2006426062094681791, guid: 6dd30c2b8d3f2ac439c3d5319c7ccc19, type: 3}
     - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
       propertyPath: movement
       value: 
@@ -545,6 +601,22 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: RightWall
+      value: 
+      objectReference: {fileID: 2715298218096072334, guid: c0f070de352f10445a078f14f4642738, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: Staggered
+      value: 
+      objectReference: {fileID: 8733655299021267160, guid: a76abb31ba55b8e4195367348628749e, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: rightWall
+      value: 
+      objectReference: {fileID: 2715298218096072334, guid: c0f070de352f10445a078f14f4642738, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: staggered
+      value: 
+      objectReference: {fileID: 8733655299021267160, guid: a76abb31ba55b8e4195367348628749e, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
       propertyPath: spawnCount
       value: 10
       objectReference: {fileID: 0}
@@ -553,9 +625,29 @@ PrefabInstance:
       value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: StaggeredWide
+      value: 
+      objectReference: {fileID: 2641619779204065471, guid: d9d3bbe336895d743a1a2f6ef9a8e941, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: staggeredWide
+      value: 
+      objectReference: {fileID: 2641619779204065471, guid: d9d3bbe336895d743a1a2f6ef9a8e941, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: StaggeredBoxes
+      value: 
+      objectReference: {fileID: 8387077497566797882, guid: 31fbdb2317e145345b2b2aa818816829, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: staggeredBoxes
+      value: 
+      objectReference: {fileID: 8387077497566797882, guid: 31fbdb2317e145345b2b2aa818816829, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
       propertyPath: showSpawnRegion
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: StaggeredReverse
+      value: 
+      objectReference: {fileID: 2450452529598572891, guid: 424bae6f8bbd63f4daa73a3ecdaafdd4, type: 3}
     - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
       propertyPath: maxSegmentLength
       value: 500
@@ -565,9 +657,29 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: staggeredReverse
+      value: 
+      objectReference: {fileID: 2450452529598572891, guid: 424bae6f8bbd63f4daa73a3ecdaafdd4, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
       propertyPath: segments.Array.size
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: StaggeredWideReverse
+      value: 
+      objectReference: {fileID: 3256585671430260584, guid: 3fba29e64dad2fd4cab313186ca3d9cc, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: staggeredWideReverse
+      value: 
+      objectReference: {fileID: 3256585671430260584, guid: 3fba29e64dad2fd4cab313186ca3d9cc, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: StaggeredBoxesReverse
+      value: 
+      objectReference: {fileID: 2068353692368742668, guid: f36f9b911babc9545b4c109584972d47, type: 3}
+    - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
+      propertyPath: staggeredBoxesReverse
+      value: 
+      objectReference: {fileID: 2068353692368742668, guid: f36f9b911babc9545b4c109584972d47, type: 3}
     - target: {fileID: 3722471983056689523, guid: 2938e3620e8144440b3efc9625215eb4, type: 3}
       propertyPath: segments.Array.data[0]
       value: 

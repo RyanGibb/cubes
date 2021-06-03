@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7091616691900325435}
   m_Layer: 0
-  m_Name: Choose
+  m_Name: LeftWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,12 +43,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1027209057910646986, guid: d6cb63f5206b64d489d5a24515cd072a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027209057910646986, guid: d6cb63f5206b64d489d5a24515cd072a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 50
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1027209057910646986, guid: d6cb63f5206b64d489d5a24515cd072a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1027209057910646986, guid: d6cb63f5206b64d489d5a24515cd072a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -56,7 +60,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1027209057910646986, guid: d6cb63f5206b64d489d5a24515cd072a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1027209057910646986, guid: d6cb63f5206b64d489d5a24515cd072a, type: 3}
       propertyPath: m_LocalRotation.w

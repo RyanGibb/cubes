@@ -7,10 +7,10 @@ public class PlayerMovement : MonoBehaviour {
 	public float zVelocity = 50;
 	public Spawner spawner;
 
-	public float zReRootPos = 1000;
-	public float zDeletePos = -1000;
+	public int zReRootPos = 1000;
+	public int zDeletePos = -1000;
 
-	public float reRootDistance;
+	public int reRootDistance;
 
 	public float swipeDistance = 0.25f;
 
