@@ -14,8 +14,11 @@ public class PlayerMovement : MonoBehaviour {
 
 	public float swipeDistance = 0.25f;
 
+	public Transform vrCamera;
+	
 	private float horizontal;
 	private Vector3 firstTouchPos;
+	private Vector3 vrCameraLastPos;
 
 	void Update() {
 		horizontal = Input.GetAxis("Horizontal");
@@ -38,6 +41,10 @@ public class PlayerMovement : MonoBehaviour {
 		velocity.x = horizontal * xVelocity;
 		body.velocity = velocity;
 		
+		Vector3 position = body.position;
+		position.x = vrCamera.position.x;
+		body.position = position;
+
 		// Reroot to avoid floating point errors when the player reaches a Z position of zReRootPos
 		if (body.position.z > zReRootPos) {
 			Vector3 playerPosition = body.position;
