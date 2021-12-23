@@ -1,8 +1,11 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 	public Rigidbody body;
-	public float xVelocity = 10;
+	public float maxXVelocity = 20;
+	public float maxXVelocityController = 10;
+	public float maxXDiff = 15;
 	public float zForce = 10000;
 	public float zVelocity = 50;
 	public Spawner spawner;
@@ -12,39 +15,42 @@ public class PlayerMovement : MonoBehaviour {
 
 	public int reRootDistance;
 
-	public float swipeDistance = 0.25f;
+	// public float swipeDistance = 0.25f;
 
-	public Transform vrCamera;
+	public Transform camera;
+	public float headsetMovementMultiplication;
+	public Vector3 cameraOffset;
 	
+	private float targetXOffset;
 	private float horizontal;
-	private Vector3 firstTouchPos;
-	private Vector3 vrCameraLastPos;
 
 	void Update() {
 		horizontal = Input.GetAxis("Horizontal");
-		if (Input.touchCount == 1) {
-			Touch touch = Input.GetTouch(0);
-			horizontal = (touch.position.x * 2 - Screen.width) / 2 / (swipeDistance * Screen.width);
-			if (horizontal < -1) {
-				horizontal = -1;
-			} else if (horizontal > 1) {
-				horizontal = 1;
-			}
-		}
 	}
 
 	void FixedUpdate() {
 		if (body.velocity.z < zVelocity) {
 			body.AddForce(zForce * Time.fixedDeltaTime * Vector3.forward);
 		}
-		Vector3 velocity = body.velocity;
-		velocity.x = horizontal * xVelocity;
-		body.velocity = velocity;
 		
-		Vector3 position = body.position;
-		position.x = vrCamera.position.x;
-		body.position = position;
+		float targetX = camera.localPosition.x * headsetMovementMultiplication + targetXOffset;
+		float xDiff = targetX - transform.position.x;
+		// exponential velocity curve
+		float xVelocity = (float) (1 - Math.Pow(xDiff / maxXDiff + 1, -2)) * maxXVelocity;
+		Vector3 velocity = body.velocity;
+		velocity.x = xVelocity + horizontal * maxXVelocityController;
+		Debug.Log(velocity.x);
+		body.velocity = velocity;
 
+		// If controller other than headset being used add offset to compensate
+		if (horizontal != 0) {
+			targetXOffset = transform.position.x;
+		}
+
+		Vector3 cameraPosition = transform.position + cameraOffset;
+		cameraPosition.x = targetX;
+		camera.parent.position = cameraPosition;
+		
 		// Reroot to avoid floating point errors when the player reaches a Z position of zReRootPos
 		if (body.position.z > zReRootPos) {
 			Vector3 playerPosition = body.position;
