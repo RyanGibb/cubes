@@ -39,7 +39,6 @@ public class PlayerMovement : MonoBehaviour {
 		float xVelocity = (float) (1 - Math.Pow(xDiff / maxXDiff + 1, -2)) * maxXVelocity;
 		Vector3 velocity = body.velocity;
 		velocity.x = xVelocity + horizontal * maxXVelocityController;
-		Debug.Log(velocity.x);
 		body.velocity = velocity;
 
 		// If controller other than headset being used add offset to compensate
@@ -48,7 +47,7 @@ public class PlayerMovement : MonoBehaviour {
 		}
 
 		Vector3 cameraPosition = transform.position + cameraOffset;
-		cameraPosition.x = targetX;
+		cameraPosition.x = targetX - camera.localPosition.x;
 		camera.parent.position = cameraPosition;
 		
 		// Reroot to avoid floating point errors when the player reaches a Z position of zReRootPos
