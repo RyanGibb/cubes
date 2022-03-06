@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d9acc7968244a8886f3af591305bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeProfile: {fileID: 11400000, guid: 31a611a779d3499e8e35f1a2018ca841, type: 2}
+  activeProfile: {fileID: 11400000, guid: 46f68c7797521474cbdd2b46f0af4cd5, type: 2}
 --- !u!4 &375979074
 Transform:
   m_ObjectHideFlags: 0
@@ -350,7 +350,7 @@ MonoBehaviour:
   reRootDistance: 0
   camera: {fileID: 1039382039}
   headsetMovementMultiplication: 20
-  cameraOffset: {x: 0, y: 2, z: -2.5}
+  cameraOffset: {x: 0, y: 2, z: -7}
 --- !u!114 &427348187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1181,7 +1181,7 @@ Camera:
   m_GameObject: {fileID: 1039382038}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
