@@ -1,7 +1,7 @@
 # Cubes
-An infinite runner with cubes created in unity. Play it [here](https://ryangibb.xyz/blog/cubes/play/).
+An infinite runner with cubes created in unity. Play it [here](https://gibbr.org/blog/cubes/play/).
 
-See the blog post [here](https://ryangibb.xyz/blog/cubes/).
+See the blog post [here](https://gibbr.org/blog/cubes/).
 
 ## Re-rooting
 
